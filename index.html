@@ -178,7 +178,18 @@
 
 <!-- FIN FOOTER -->
 
-<a href="https://vncntfrns.github.io/Daffit/" class="top">Haut de page</a>
+
+<a name="haut" id="haut"></a>
+[Contenu]   
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+  };
+});
+</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
