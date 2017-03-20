@@ -22,10 +22,9 @@
 
 
 
-
 <!-- NAVBAR-->
 
-    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top">
     
     <div class="container-fluid">
     
@@ -36,7 +35,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand"> DAFFIT</a>
+ 
+      <a class="navbar-brand">  <b>DAFFIT.</b> </a>
+
     </div>
 
 
@@ -70,10 +71,10 @@
     </div>
     
     <div class="btn-group" role="group" aria-label="...">
-    <button type="button" class="btn btn-default">Découvrir notre solution</button>
+    <button type="button" class="btn btn-primary">Découvrir notre solution</button>
     </div>
     <div class="smallmargin"></div>
-    <center><div id="lignedeséparation">
+    <center><div id="lignedeséparationblanche">
     </div>
     </center>
 </div>
@@ -90,11 +91,15 @@
 </div>
 
 <div>
-  <p id="ourteamtitre"> OUR TEAM </p>
+  <h2 id="ourteamtitre"> OUR TEAM </h2>
 </div>
+<center><div id="lignedeséparationbleu">
+</div>
+</center>
 
 <div class="margin">
 </div>
+
 
 <div id="ourteam">
 
@@ -109,8 +114,8 @@
         <div class="smallmargin">
         </div>
 
-      <a class="nom" href="https://www.linkedin.com/in/julien-legret-78837b82/"> Julien LEGRET<br>
-      <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/julien-legret-78837b82/">
+      <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             
         <div class="smallmargin">
         </div>
@@ -122,10 +127,10 @@
         
         <div class="smallmargin">
         </div>
-
-      <a class="nom" href="hhttps://www.linkedin.com/in/vincent-farines-73055b80/"> Vincent FARINES <br>
-      <div class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i> </a>
-      </div>
+      
+        <a href="hhttps://www.linkedin.com/in/vincent-farines-73055b80/"> 
+        <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      
       
         <div class="smallmargin">
         </div>
@@ -184,11 +189,50 @@
   
   </div>
 
+      <!-- Début bouton scroll up-->
+
+  <a href="https://vncntfrns.github.io/Daffit/" title="Haut de page" class="scrollup"><i class="fa fa-angle-up"></i></a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      
+      <script>
+        jQuery(document).ready(function(){
+        ScrollToTop=function() {
+        var s = $(window).scrollTop();
+        if (s > 250) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+       
+        $('.scrollup').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+        }
+       
+        StopAnimation=function() {
+        $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
+          $('html, body').stop();
+        });
+        }
+       
+       
+        $(window).scroll(function() {
+        ScrollToTop();
+        StopAnimation();
+        });
+
+        });
+       </script>
+
+      <!-- Fin bouton scroll up-->
+
 </div>
+
 
 <!-- FIN FOOTER -->
 
-<a href="https://vncntfrns.github.io/Daffit/" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up"></i></a>
 
   </body>
 </html>
