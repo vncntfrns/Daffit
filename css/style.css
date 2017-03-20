@@ -48,7 +48,7 @@ a {
 }
 
 .verysmallmargin{
-	margin:1em;
+	margin:14px;
 }
 
 #ourteamtitre{
@@ -146,6 +146,15 @@ a {
 	height: 0.5px;
 	position: center;
 	opacity: 0.2px;
+}
+
+
+#ligne{
+	background-color: rgba(255,255,255,0.2);
+	width: 290px;
+	height: 1px;
+	position: left;
+
 }
 
 #lignedeséparationbleu{
